@@ -39,6 +39,6 @@ table, it_i = iteration(table, graph, it_i)
 
 For each `i` in `it_i`, consider outgoing edges `(i, j)`. If `d_start_i + d_ij` improves the known distance to `j`, update `table[j]`. If it ties, append `i` to `table[j].i` (alternative path). Newly discovered/improved `j` nodes form the next `it_i`.
 
-## Dijkstra
+### Dijkstra
 
 The main function computes the next iteration only if there is a non empty `it_i` or if the max number of iterations is reached.
